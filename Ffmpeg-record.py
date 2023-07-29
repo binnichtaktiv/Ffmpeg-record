@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-link = input("enter YouTube link: ")
+link = input("enter Video link: ")
 
 youtube_dl_output = subprocess.check_output("yt-dlp -g " + link, shell=True, executable="/bin/bash").decode("utf-8").strip()
 
